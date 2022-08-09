@@ -41,7 +41,8 @@ const displayBook = (book) => {
   <div class ="content">  <p class = "title"> title : <span>${book.title}</span> by </p>
   <p>Author : ${book.author}</p></div>
   <button class = "remove" type = button>Remove</button>
-  </div>  `;
+  </div>  
+  `;
 };
 // display local storage data
 const books = getBooks();
@@ -59,6 +60,10 @@ submit.addEventListener('click', (e) => {
     addBooks(book);
     displayBook(book);
   }
+
+  document.querySelector('#title').value = '';
+  document.querySelector('#author').value = '';
+
 });
 
 // remove a book from the list
