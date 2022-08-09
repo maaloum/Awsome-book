@@ -1,0 +1,41 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+
+  /* background-color:bisque; */
+
+  /* margin: auto 20px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form input {
+  width: 100%;
+  margin: 3px;
+}
+
+form button {
+  width: 100%;
+  margin: 3px;
+  cursor: pointer;
+}
+
+hr {
+  width: 100%;
+}
+
+.remove {
+  margin: 3px;
+}
