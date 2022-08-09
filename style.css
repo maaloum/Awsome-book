@@ -16,7 +16,10 @@ body {
 h1 {
   margin: 20px;
 }
-
+svg{
+  width: 40px;
+  height: 40px;
+}
 form {
   display: flex;
   flex-direction: column;
@@ -38,6 +41,11 @@ form button {
   text-align: center;
 }
 
+form button:hover{
+  transform: scale(1.1);
+  background-color: rgb(5, 48, 218);
+  color: white;
+}
 hr {
   width: 100%;
 }
