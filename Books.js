@@ -52,6 +52,7 @@ function addBook(book) {
   displayBook(book);
 }
 
+// add the event to the button
 submit.addEventListener('click', (e) => {
   e.preventDefault();
   const t = document.querySelector('#title').value;
