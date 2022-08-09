@@ -34,7 +34,8 @@ function removeFromLocalSorage(title) {
 }
 function deleteBook(target) {
   if (target.classList.contains('remove')) {
-    removeFromLocalSorage(target.parentNode.firstElementChild.firstElementChild.innerHTML);
+    removeFromLocalSorage(target.parentNode.firstElementChild.firstElementChild
+      .firstElementChild.innerHTML);
     target.parentNode.remove();
   }
 }
