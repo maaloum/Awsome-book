@@ -60,6 +60,8 @@ submit.addEventListener('click', (e) => {
     addBooks(book);
     displayBook(book);
   }
+  document.querySelector('#title').value = '';
+  document.querySelector('#author').value = '';
 });
 
 // remove a book from the list
