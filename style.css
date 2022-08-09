@@ -14,6 +14,11 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-color:bisque
+}
+
+h1{
+  margin: 20px;
 }
 
 form {
@@ -27,9 +32,15 @@ form input {
 }
 
 form button {
-  width: 100%;
   margin: 3px;
+  background-color: rgb(55, 205, 63);
+  border: 1px solid rgb(55, 205, 63);
+  border-radius: 4px;
+  height: 25px;
+  width: 100%;
+  border-radius: 4px;
   cursor: pointer;
+  text-align: center;
 }
 
 hr {
@@ -38,4 +49,37 @@ hr {
 
 .remove {
   margin: 3px;
+  text-align: center;
+  color : white;
+  border: 1px solid red;
+  background-color:red;
+  border-radius: 4px;
+  height: 25px;
+  width: 70px;
+  cursor: pointer;
 }
+
+.container {
+  width: 80%;
+  /* height: 100%; */
+  /* background-color:rgb(225, 229, 228) */
+}
+.wrapper {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin : 10px;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  gap : 5px;
+}
+
+/* .content p {
+
+} */

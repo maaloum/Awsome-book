@@ -6,10 +6,9 @@ const bookLists = [];
 // Creating UI to display the content
 const displayBook = (book) => {
   container.innerHTML += `
-  <div>
-  <p class = "title"> title : <span>${book.title}</span></p>
-  <p>Author : ${book.author}</p>
-  <hr>
+  <div class = "wrapper">
+  <div class ="content">  <p class = "title"> title : <span>${book.title}</span> by </p>
+  <p>Author : ${book.author}</p></div>
   <button class = "remove" type = button>Remove</button>
   </div>
   `;
