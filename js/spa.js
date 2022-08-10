@@ -24,7 +24,6 @@ contact.addEventListener('click', () => {
 });
 
 // Manipulating books
-const bookLists = [];
 
 // Creating UI to display the content
 const displayBook = (book) => {
@@ -39,9 +38,8 @@ const displayBook = (book) => {
 
 // get data from local storage
 function getBooks() {
-  const books = localStorage.getItem('booksCollection');
-  if (!books) return [];
-  return JSON.parse(books);
+  const books = JSON.parse(localStorage.getItem('booksCollection')) || [];
+  return books;
 }
 // display local storage data
 const books = getBooks();
@@ -51,8 +49,8 @@ books.forEach((element) => {
 
 // remove a book from the list
 function removeFromLocalSorage(title) {
-  const books = getBooks();
-  const newBooks = books.filter((item) => item.title !== title);
+  const previousbooks = getBooks();
+  const newBooks = previousbooks.filter((item) => item.title !== title);
   localStorage.setItem('booksCollection', JSON.stringify(newBooks));
 }
 function deleteBook(target) {
@@ -69,9 +67,8 @@ document.querySelector('.container').addEventListener('click', handleremove);
 
 // Add a new book
 function addBook(book) {
-  bookLists.push(book);
-  localStorage.setItem('booksCollection', JSON.stringify(bookLists));
-
+  books.push(book);
+  localStorage.setItem('booksCollection', JSON.stringify(books));
   displayBook(book);
 }
 
