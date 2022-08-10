@@ -5,24 +5,63 @@
 }
 
 body {
-  width: 100vw;
+  /* width: 100vw;
+  height: 100vh; */
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: bisque;
+  background-color: rgb(255, 254, 253);
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid black;
+  background: rgb(244, 231, 231);
+  margin: 0 10px;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline;
+  margin: 5px;
+  padding-right: 5px;
+  border-right: 2px solid black;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+li a:hover {
+  text-decoration: none;
 }
 
 h1 {
   margin: 20px;
+  cursor: pointer;
 }
-svg{
+
+svg {
   width: 40px;
   height: 40px;
 }
+
 form {
-  display: flex;
+  margin: 70px;
+  display: none;
   flex-direction: column;
+}
+
+.newBook {
+  text-align: center;
+  font-weight: bold;
+  display: block;
 }
 
 form input {
@@ -41,11 +80,12 @@ form button {
   text-align: center;
 }
 
-form button:hover{
+form button:hover {
   transform: scale(1.1);
   background-color: rgb(5, 48, 218);
   color: white;
 }
+
 hr {
   width: 100%;
 }
@@ -63,6 +103,7 @@ hr {
 }
 
 .container {
+  display: block;
   width: 80%;
 }
 
@@ -80,4 +121,49 @@ hr {
   display: flex;
   align-items: center;
   gap: 5px;
+}
+
+#touch {
+  display: none;
+  margin-top: 50px;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+#touch h1 {
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#touch p {
+  padding-bottom: 5px;
+}
+
+#touch ul {
+  margin-left: 10px;
+  padding-left: 10px;
+}
+
+footer {
+  display: flex;
+  position: absolute;
+  top: 480px;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+  justify-content: space-evenly;
+  margin: 0 20px;
+  padding: 20px;
+  border: 1px solid black;
+  background: rgb(244, 231, 231);
+  text-align: center;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  text-decoration: none;
+  list-style: none;
+  margin-right: 30px;
 }
